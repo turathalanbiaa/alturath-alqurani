@@ -1,0 +1,74 @@
+.bookitem.wrapper{
+    position: relative;
+    width: 100%;
+    height: 340px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+.bookitem .overlay{
+    z-index: 3;
+    position: absolute;
+    background-color: #2B2B2BCC;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: height 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.bookitem .info{
+    z-index: 2;
+    position: absolute;
+    background-color: #2B2B2BCC;
+    color: #FFF;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    transition: opacity 1s ease;
+}
+
+.bookitem .image{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+.bookitem .info .title{
+    font-size: 18px;
+    font-weight: normal;
+    text-align: right;
+    display: block;
+    line-height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.bookitem .info .category {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    display: block;
+}
+
+.bookitem .overlay .button {
+    width: 160px;
+    margin-bottom: 10px;
+    background: #FFC95D;
+}
+
+.bookitem .overlay .light-grey{
+    background: #EEE;
+}

@@ -1,0 +1,92 @@
+.result-container {
+    position: relative;
+}
+
+.result-container .fixed {
+    position: sticky !important;
+    right: auto !important;
+    top:0 !important;
+}
+
+.result-container .category.list{
+    background-color: #EEEEEE;
+}
+
+.result-container .category.list .item{
+    font-size: 16px;
+    background-color: #f7f7f9;
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    border-right: 3px #FFC95D solid;
+    text-decoration: none;
+    color: #070C2A;
+    transition: border-right 0.7s ease;
+    cursor: pointer;
+}
+
+.result-container .category.list .item:hover{
+    border-right: 3px #070C2A solid;
+}
+
+
+.result-container .video-item .image-wrapper{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.result-container .video-item .image-wrapper img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.result-container .video-item .image-wrapper .image-overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #070C2AAA;
+}
+
+.result-container .video-item .image-wrapper .image-overlay.show {
+    display: flex !important;
+}
+
+.result-container .video-item .image-wrapper .image-overlay i{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+
+.result-container .video-item .title{
+    margin-top: 7px;
+    width: 85%;
+    height: 30px;
+    color: #666;
+    font: 12px title;
+    text-align: right;
+    cursor: pointer;
+}
+
+.dimmed.dimmable>.ui.visible.dimmer, .ui.active.dimmer
+{
+    display: flex !important;
+}
+
+.ui.active.modal{
+    margin-top:0 !important;
+}

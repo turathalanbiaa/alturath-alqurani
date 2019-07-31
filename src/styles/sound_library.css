@@ -1,0 +1,51 @@
+.sound-item {
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px #787878 solid;
+}
+
+.title-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.title-action .title-tag {
+    flex: 0.7;
+}
+
+.sound-item .title-tag .tags {
+    overflow: hidden;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.sound-item .title-tag .tags .label {
+    flex: auto;
+}
+
+.sound-item .title-tag .title {
+    font-size: 36px;
+    line-height: 36px;
+    display: block;
+}
+
+.title-action .actions {
+    flex: 0.3;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sound-item audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .sound-item .title-tag .title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+}
